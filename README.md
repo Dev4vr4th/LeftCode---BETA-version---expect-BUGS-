@@ -167,6 +167,3 @@ React 19, TypeScript, Vite, Monaco Editor, Pyodide.
 
 Issues and pull requests are welcome. Please run `npm run lint` and `npm run build` before submitting.
 
-## License
-
-Add your license here (for example MIT) and include a `LICENSE` file in the repo.
