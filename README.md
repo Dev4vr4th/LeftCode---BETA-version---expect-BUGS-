@@ -36,7 +36,7 @@ Every layout choice is measured against one principle: **minimum hand travel.**
 
 ```bash
 # 1. Get the code
-git clone https://github.com/<your-username>/leftcode.git
+git clone https://github.com/<dev4vr4th>/leftcode.git
 cd leftcode
 
 # 2. Install dependencies
