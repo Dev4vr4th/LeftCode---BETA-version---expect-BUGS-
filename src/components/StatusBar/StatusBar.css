@@ -1,0 +1,53 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 26px;
+  padding: 0 12px;
+  background: #007acc;
+  color: #fff;
+  font-size: 12px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.status-left,
+.status-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.status-item {
+  opacity: 0.95;
+}
+
+.status-item.mode {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1px 7px;
+  border-radius: 3px;
+}
+
+.status-item.travel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.travel-bar {
+  display: inline-block;
+  width: 48px;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.travel-fill {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}

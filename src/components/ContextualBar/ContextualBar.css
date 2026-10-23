@@ -1,0 +1,88 @@
+.contextual-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 12px;
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+  gap: 12px;
+}
+
+.ctx-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.ctx-lang-badge {
+  background: #0e639c;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.4px;
+  flex-shrink: 0;
+}
+
+.ctx-file {
+  font-size: 13px;
+  color: #bbb;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ctx-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.ctx-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #ddd;
+  font-size: 12px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.12s;
+  min-height: 34px;
+}
+
+.ctx-btn:hover {
+  background: #094771;
+  border-color: #0e639c;
+  color: #fff;
+}
+
+.ctx-btn:active {
+  background: #0e639c;
+}
+
+.ctx-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.ctx-label {
+  font-weight: 500;
+}
+
+/* On very small widths, hide labels and keep icons */
+@media (max-width: 900px) {
+  .ctx-label {
+    display: none;
+  }
+  .ctx-btn {
+    padding: 7px 10px;
+  }
+}

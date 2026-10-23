@@ -1,0 +1,55 @@
+.output-panel {
+  height: 180px;
+  min-height: 120px;
+  background: #1e1e1e;
+  border-top: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.output-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #bbb;
+  background: #252526;
+  border-bottom: 1px solid #333;
+}
+
+.output-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.output-actions button {
+  background: #333;
+  border: 1px solid #555;
+  color: #ccc;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.output-actions button:hover {
+  background: #444;
+  color: #fff;
+}
+
+.output-content {
+  flex: 1;
+  margin: 0;
+  padding: 10px 14px;
+  overflow: auto;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #d4d4d4;
+  white-space: pre-wrap;
+  word-break: break-all;
+}

@@ -1,0 +1,107 @@
+.editor-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #1e1e1e;
+}
+
+.tabs {
+  display: flex;
+  background: #252526;
+  border-bottom: 1px solid #333;
+  overflow-x: auto;
+  flex-shrink: 0;
+  min-height: 36px;
+}
+
+.empty-tabs {
+  padding: 10px 16px;
+  color: #888;
+  font-size: 13px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #bbb;
+  cursor: pointer;
+  border-right: 1px solid #333;
+  white-space: nowrap;
+  max-width: 180px;
+}
+
+.tab:hover {
+  background: #2a2a2a;
+}
+
+.tab.active {
+  background: #1e1e1e;
+  color: #fff;
+  border-bottom: 2px solid #007acc;
+}
+
+.tab-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab-close {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+  border-radius: 3px;
+  opacity: 0.6;
+}
+
+.tab:hover .tab-close,
+.tab.active .tab-close {
+  opacity: 1;
+}
+
+.tab-close:hover {
+  background: #444;
+  color: #fff;
+}
+
+.monaco-wrapper {
+  flex: 1;
+  min-height: 0;
+}
+
+.editor-empty {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  gap: 8px;
+}
+
+.editor-empty h2 {
+  color: #ccc;
+  margin: 0;
+  font-weight: 500;
+}
+
+.editor-empty .hint {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.editor-empty kbd {
+  background: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  font-family: inherit;
+  font-size: 12px;
+}

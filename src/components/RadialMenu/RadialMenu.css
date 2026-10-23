@@ -1,0 +1,98 @@
+.radial-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+  backdrop-filter: blur(2px);
+}
+
+.radial-menu {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radial-center {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #1e1e1e;
+  border: 2px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.15s;
+}
+
+.radial-center:hover {
+  background: #333;
+  color: #fff;
+  border-color: #777;
+}
+
+.radial-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px; /* half of itemSize */
+  margin-top: -32px;
+  border-radius: 50%;
+  background: #2a2a2a;
+  border: 2px solid #444;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.radial-item:hover,
+.radial-item.hovered {
+  background: #0e639c;
+  border-color: #1177bb;
+  color: #fff;
+  transform: scale(1.12);
+  box-shadow: 0 6px 20px rgba(14, 99, 156, 0.45);
+}
+
+.radial-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.radial-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.radial-hint {
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 13px;
+  color: #bbb;
+  background: #1e1e1e;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #333;
+}

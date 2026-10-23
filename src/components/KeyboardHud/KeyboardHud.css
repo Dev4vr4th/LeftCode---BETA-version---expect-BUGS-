@@ -1,0 +1,39 @@
+.kb-hud {
+  position: fixed;
+  right: 16px;
+  bottom: 40px;
+  z-index: 50;
+  padding: 8px 10px;
+  background: rgba(30, 30, 30, 0.88);
+  border: 1px solid #3c3c3c;
+  border-radius: 8px;
+  user-select: none;
+  transition: border-color 0.1s, box-shadow 0.1s;
+}
+.kb-hud.mirrored {
+  border-color: #007acc;
+  box-shadow: 0 0 12px rgba(0, 122, 204, 0.5);
+}
+.kb-row { display: flex; gap: 4px; margin-bottom: 4px; }
+.kb-key {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2d2d2d;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  color: #cccccc;
+  font: 600 13px system-ui, sans-serif;
+  transition: background 0.06s, transform 0.06s;
+}
+.kb-key.wide { width: 46px; font-size: 11px; }
+.kb-key.space { width: 150px; font-size: 11px; letter-spacing: 1px; }
+.kb-key.twin { background: #0e3a5c; border-color: #007acc; color: #fff; }
+.kb-key.pressed { background: #007acc; border-color: #4fc1ff; color: #fff; transform: translateY(1px); }
+.kb-orig { position: absolute; top: 1px; left: 3px; font-size: 8px; font-weight: 400; opacity: 0.55; }
+.kb-grip { cursor: grab; touch-action: none; height: 14px; margin: -4px 0 6px 14px; font: 10px system-ui, sans-serif; color: #888; line-height: 14px; }
+.kb-grip:active { cursor: grabbing; }
+.kb-resize { position: absolute; top: 0; left: 0; width: 14px; height: 14px; cursor: nwse-resize; touch-action: none; background: linear-gradient(135deg, #888 50%, transparent 50%); border-top-left-radius: 8px; }
